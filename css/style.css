@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body{
+    font-family: "Lexend Deca", sans-serif;
+    font-size : 15px;
+    font-weight : 400;
+    color : hsla(0, 0%, 100%, 0.75);
+    background-color : hsl(233, 47%, 7%);
+    display : flex;
+    justify-content: center;
+    align-items :center;
+    line-height : 1.4;
+    height: 100vh;
+}
+
+.card{
+    background-color: hsl(244, 38%, 16%);
+    border-radius : 10px;
+    display : flex;
+    /*Dimensions spécifiées pour le desktop*/
+    width : 900px;
+}
+
+.card__left-pannel{
+    padding : 40px;
+    padding-right : 70px;
+}
+
+.card__title{
+    font-family : "Inter", sans-serif;
+    font-size : 2.2em;
+    font-weight :700;
+    color : white;
+    padding-bottom : 20px;
+}
+
+.card__title--strong{
+    color : hsl(277, 64%, 61%);
+}
+
+.card__description{
+    padding-right : 30px;
+}
+
+.card__footer{
+    display : flex;
+    justify-content: space-between;
+}
+
+.footer__stats{
+    padding-top : 40px;
+    padding-right : 30px;
+}
+
+.stats__figures{
+    font-family: "Inter", sans-serif;
+    font-size : 1.5em;
+    font-weight: 700;
+    color : white;
+}
+
+.stats__name{
+    text-transform: uppercase;
+    font-size : 0.8em;
+}
+
+
+.card__right-pannel{
+    flex-shrink: 0;
+    width : calc(.8*540px);
+    height : calc(.8*446px);
+    border-radius : 0 10px 10px 0;
+    background-image: linear-gradient(hsla(277, 64%, 61%, 60%),
+                                        hsla(277, 64%, 61%, 60%)),
+                                        url("../images/image-header-desktop.jpg");
+    background-size : contain;
+    background-repeat: no-repeat;
+}
